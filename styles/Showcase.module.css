@@ -1,0 +1,35 @@
+.showCase{
+    height: 300px;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background: #000 url('../public/images/showcase.jpg');
+    color: #ffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.showCase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.showCase * {
+    z-index: 20px;
+}
+
+.showCase h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    color: white;
+}
