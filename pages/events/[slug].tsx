@@ -11,7 +11,7 @@ export default function eventsPages({evt}:{evt: any | undefined; }) {
   )
 }
 
-export async function getServerSideProps({query:{slug}}: {slug: string; query: any;}){
+export async function getStaticProps({query:{slug}}: {slug: string; query: any;}){
 
   const res = await fetch (`${API_URL}/api/events/{slug}`)
   const events = await res.json()
