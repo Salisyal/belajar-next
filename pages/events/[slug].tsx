@@ -11,14 +11,4 @@ export default function eventsPages({evt}:{evt: any | undefined; }) {
   )
 }
 
-// export async function getServerSideProps({query:{slug}} ) {
 
-//   const res = await fetch (`${API_URL}/api/events/{slug}`)
-//   const events = await res.json()
-
-//   return {
-//     props: {
-//       events: events[0] || null, 
-//     },
-//   }
-// }
