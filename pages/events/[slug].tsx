@@ -6,19 +6,19 @@ export default function eventsPages({evt}:{evt: any | undefined; }) {
 
   return (
     <Layout>
-        <h1>Testing</h1>
+      <h1>oke</h1>
     </Layout>
   )
 }
 
-// export async function getServerSideProps({query:{slug}} ) {
+export async function getServerSideProps({query:{slug}}: {slug: string; query: any;}){
 
-//   const res = await fetch (`${API_URL}/api/events/{slug}`)
-//   const events = await res.json()
+  const res = await fetch (`${API_URL}/api/events/{slug}`)
+  const events = await res.json()
 
-//   return {
-//     props: {
-//       events: events[0] || null, 
-//     },
-//   }
-// }
+  return {
+    props: {
+      events: events[0] || null, 
+    },
+  }
+}
