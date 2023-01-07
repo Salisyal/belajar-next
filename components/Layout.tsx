@@ -28,8 +28,8 @@ export default function Layout( {title, description, keywords, children}: { titl
 }
 
 Layout.defaultProps = {
-    title: 'Event Sholatawatan',
-    description: 'event sholawat cuy',
-    keywords: 'sholawat, rohani,'
+    title: 'Event Dj',
+    description: 'event Dj cuy',
+    keywords: 'Dj, edm,'
 
 }
